@@ -1,0 +1,4 @@
+# Add configuration values here, as shown below.
+#
+APP_SECRET: "3w5ef0keu42tpxz"
+ACCESS_TOKEN_SECRET: "v2sl8n0hlmsxmxq"

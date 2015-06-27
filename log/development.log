@@ -3627,3 +3627,370 @@ Processing by ListingsController#index as HTML
   Rendered layouts/_header.html.erb (0.1ms)
   Rendered layouts/_footer.html.erb (0.0ms)
 Completed 200 OK in 127ms (Views: 126.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/listings" for ::1 at 2015-06-27 14:31:03 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (9.8ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (72.9ms)
+Completed 500 Internal Server Error in 268ms (ActiveRecord: 10.2ms)
+
+ActionView::Template::Error (:access_type must be either "dropbox" or "app_folder" (was "dapp_folder")):
+     5:     <div class="col-md-3">
+     6: 
+     7:       <div class="thumbnail">
+     8:       <%= image_tag listing.image.url%><br>
+     9:       <div class="caption">
+    10:         <h3><%= listing.name %></h3>
+    11:           <p><%= number_to_currency(listing.price) %></p>
+  app/views/listings/index.html.erb:8:in `block in _app_views_listings_index_html_erb___3433294141183799564_70157502031740'
+  app/views/listings/index.html.erb:4:in `_app_views_listings_index_html_erb___3433294141183799564_70157502031740'
+
+
+  Rendered /Users/priyeshtungare/.rvm/gems/ruby-2.2.1@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.3ms)
+  Rendered /Users/priyeshtungare/.rvm/gems/ruby-2.2.1@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/priyeshtungare/.rvm/gems/ruby-2.2.1@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/priyeshtungare/.rvm/gems/ruby-2.2.1@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (97.6ms)
+  Rendered /Users/priyeshtungare/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/priyeshtungare/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/priyeshtungare/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/priyeshtungare/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/priyeshtungare/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (72.0ms)
+  Rendered /Users/priyeshtungare/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/priyeshtungare/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/priyeshtungare/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (372.2ms)
+
+
+Started GET "/listings" for ::1 at 2015-06-27 14:33:06 +0800
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.3ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (307.5ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 2466ms (Views: 2465.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custom.self-139611ac333039e62462d89208b238f2d2b7598fb15ea5da283e40297ae4e2bd.css?body=1" for ::1 at 2015-06-27 14:33:08 +0800
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-06-27 14:33:08 +0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-27 14:33:08 +0800
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-27 14:33:08 +0800
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for ::1 at 2015-06-27 14:33:08 +0800
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-27 14:33:08 +0800
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-27 14:33:08 +0800
+
+
+Started GET "/assets/listings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-27 14:33:08 +0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-27 14:33:08 +0800
+
+
+Started GET "/assets/listings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-27 14:33:08 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-06-27 14:33:08 +0800
+
+
+Started GET "/listings/2/edit" for ::1 at 2015-06-27 14:33:12 +0800
+Processing by ListingsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mListing Load (0.7ms)[0m  SELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered listings/_form.html.erb (88.0ms)
+  Rendered listings/edit.html.erb within layouts/application (93.5ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 449ms (Views: 233.1ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/listings/2" for ::1 at 2015-06-27 14:33:21 +0800
+Processing by ListingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BxSMl8/ZY2qGkIP8zM0Kx0nf//vy+kS/sm50QUq9nb6vSOueu632JD44WV+OvWBkKXgeYAj+fWa1tGhR9bTD+A==", "listing"=>{"name"=>"Couple Pillows", "description"=>"The base is a cream cotton with black fabric ink imprinted at top. Available in 16*16.", "price"=>"42.9", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f9da8207338 @tempfile=#<Tempfile:/var/folders/qb/nxdg06qj14s8dx30ybl3qsp00000gn/T/RackMultipart20150627-35608-d5q741.png>, @original_filename="couple_pillows.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"listing[image]\"; filename=\"couple_pillows.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Listing", "id"=>"2"}
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.4ms)
+
+KeyError (:access_type must be either "dropbox" or "app_folder" (was "dapp_folder")):
+  app/controllers/listings_controller.rb:44:in `block in update'
+  app/controllers/listings_controller.rb:43:in `update'
+
+
+  Rendered /Users/priyeshtungare/.rvm/gems/ruby-2.2.1@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/priyeshtungare/.rvm/gems/ruby-2.2.1@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/priyeshtungare/.rvm/gems/ruby-2.2.1@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/priyeshtungare/.rvm/gems/ruby-2.2.1@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (88.6ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x007f9da2012c18 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f9da2012948 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f9da50c3628 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started PATCH "/listings/2" for ::1 at 2015-06-27 14:34:01 +0800
+Processing by ListingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BxSMl8/ZY2qGkIP8zM0Kx0nf//vy+kS/sm50QUq9nb6vSOueu632JD44WV+OvWBkKXgeYAj+fWa1tGhR9bTD+A==", "listing"=>{"name"=>"Couple Pillows", "description"=>"The base is a cream cotton with black fabric ink imprinted at top. Available in 16*16.", "price"=>"42.9", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f9da66970d0 @tempfile=#<Tempfile:/var/folders/qb/nxdg06qj14s8dx30ybl3qsp00000gn/T/RackMultipart20150627-35608-b87cnm.png>, @original_filename="couple_pillows.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"listing[image]\"; filename=\"couple_pillows.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Listing", "id"=>"2"}
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: PATH=/opt/ImageMagick/bin:$PATH; file -b --mime '/var/folders/qb/nxdg06qj14s8dx30ybl3qsp00000gn/T/44a6b89f46b47e6b00fe2e648357f4a620150627-35608-1pfkrxd.png'
+Command :: PATH=/opt/ImageMagick/bin:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/qb/nxdg06qj14s8dx30ybl3qsp00000gn/T/44a6b89f46b47e6b00fe2e648357f4a620150627-35608-ms7t1d.png[0]' 2>/dev/null
+Command :: PATH=/opt/ImageMagick/bin:$PATH; identify -format %m '/var/folders/qb/nxdg06qj14s8dx30ybl3qsp00000gn/T/44a6b89f46b47e6b00fe2e648357f4a620150627-35608-ms7t1d.png[0]'
+Command :: PATH=/opt/ImageMagick/bin:$PATH; convert '/var/folders/qb/nxdg06qj14s8dx30ybl3qsp00000gn/T/44a6b89f46b47e6b00fe2e648357f4a620150627-35608-ms7t1d.png[0]' -auto-orient -resize "200" '/var/folders/qb/nxdg06qj14s8dx30ybl3qsp00000gn/T/035e60755414934a681b6b302e4accc320150627-35608-18uvw9r'
+Command :: PATH=/opt/ImageMagick/bin:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/qb/nxdg06qj14s8dx30ybl3qsp00000gn/T/44a6b89f46b47e6b00fe2e648357f4a620150627-35608-ms7t1d.png[0]' 2>/dev/null
+Command :: PATH=/opt/ImageMagick/bin:$PATH; identify -format %m '/var/folders/qb/nxdg06qj14s8dx30ybl3qsp00000gn/T/44a6b89f46b47e6b00fe2e648357f4a620150627-35608-ms7t1d.png[0]'
+Command :: PATH=/opt/ImageMagick/bin:$PATH; convert '/var/folders/qb/nxdg06qj14s8dx30ybl3qsp00000gn/T/44a6b89f46b47e6b00fe2e648357f4a620150627-35608-ms7t1d.png[0]' -auto-orient -resize "100x100>" '/var/folders/qb/nxdg06qj14s8dx30ybl3qsp00000gn/T/035e60755414934a681b6b302e4accc320150627-35608-pa1v5a'
+Command :: PATH=/opt/ImageMagick/bin:$PATH; file -b --mime '/var/folders/qb/nxdg06qj14s8dx30ybl3qsp00000gn/T/44a6b89f46b47e6b00fe2e648357f4a620150627-35608-1phxdeh.png'
+  [1m[35mSQL (0.5ms)[0m  UPDATE "listings" SET "image_updated_at" = ?, "image_file_name" = ?, "updated_at" = ? WHERE "listings"."id" = ?  [["image_updated_at", "2015-06-27 06:34:07.711174"], ["image_file_name", "couple_pillows.png"], ["updated_at", "2015-06-27 06:34:08.978342"], ["id", 2]]
+  [1m[36m (227.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/listings/2
+Completed 302 Found in 17404ms (ActiveRecord: 228.3ms)
+
+
+Started GET "/listings/2" for ::1 at 2015-06-27 14:34:19 +0800
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered listings/show.html.erb within layouts/application (1092.2ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1736ms (Views: 1733.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.self-139611ac333039e62462d89208b238f2d2b7598fb15ea5da283e40297ae4e2bd.css?body=1" for ::1 at 2015-06-27 14:34:21 +0800
+
+
+Started GET "/assets/listings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-27 14:34:21 +0800
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-27 14:34:21 +0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-27 14:34:21 +0800
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-27 14:34:21 +0800
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-06-27 14:34:21 +0800
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for ::1 at 2015-06-27 14:34:21 +0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-27 14:34:21 +0800
+
+
+Started GET "/assets/listings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-27 14:34:21 +0800
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-27 14:34:21 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-06-27 14:34:21 +0800
+
+
+Started GET "/" for ::1 at 2015-06-27 14:34:30 +0800
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.4ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 119ms (Views: 118.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/listings/2" for ::1 at 2015-06-27 14:34:33 +0800
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mListing Load (0.1ms)[0m  SELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered listings/show.html.erb within layouts/application (2029.9ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 2120ms (Views: 2118.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/listings" for ::1 at 2015-06-27 14:34:37 +0800
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.3ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 77ms (Views: 76.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/listings/3/edit" for ::1 at 2015-06-27 14:34:39 +0800
+Processing by ListingsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered listings/_form.html.erb (5.1ms)
+  Rendered listings/edit.html.erb within layouts/application (35.5ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 131ms (Views: 129.5ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/listings/3" for ::1 at 2015-06-27 14:34:46 +0800
+Processing by ListingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"teB8eGG0Bs5351wedcLr+oJBOuv2cj18/PdUyRuvSCgdvBtxFcCTgM9Phr03soFZ4ubbcAx2BKX7LUjZpKYWbg==", "listing"=>{"name"=>"Beer Holder", "description"=>"Made up of Rubber to hold your chilled beer.", "price"=>"16.9", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f9da62be170 @tempfile=#<Tempfile:/var/folders/qb/nxdg06qj14s8dx30ybl3qsp00000gn/T/RackMultipart20150627-35608-fk6iom.png>, @original_filename="beer_holder.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"listing[image]\"; filename=\"beer_holder.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Listing", "id"=>"3"}
+  [1m[36mListing Load (0.3ms)[0m  [1mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: PATH=/opt/ImageMagick/bin:$PATH; file -b --mime '/var/folders/qb/nxdg06qj14s8dx30ybl3qsp00000gn/T/9e76d05a66ff24c83df162a95f33589420150627-35608-1royya8.png'
+Command :: PATH=/opt/ImageMagick/bin:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/qb/nxdg06qj14s8dx30ybl3qsp00000gn/T/9e76d05a66ff24c83df162a95f33589420150627-35608-81p69a.png[0]' 2>/dev/null
+Command :: PATH=/opt/ImageMagick/bin:$PATH; identify -format %m '/var/folders/qb/nxdg06qj14s8dx30ybl3qsp00000gn/T/9e76d05a66ff24c83df162a95f33589420150627-35608-81p69a.png[0]'
+Command :: PATH=/opt/ImageMagick/bin:$PATH; convert '/var/folders/qb/nxdg06qj14s8dx30ybl3qsp00000gn/T/9e76d05a66ff24c83df162a95f33589420150627-35608-81p69a.png[0]' -auto-orient -resize "200" '/var/folders/qb/nxdg06qj14s8dx30ybl3qsp00000gn/T/c04fdcd558e7082c08b04ca1cab6880120150627-35608-1mvkqmk'
+Command :: PATH=/opt/ImageMagick/bin:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/qb/nxdg06qj14s8dx30ybl3qsp00000gn/T/9e76d05a66ff24c83df162a95f33589420150627-35608-81p69a.png[0]' 2>/dev/null
+Command :: PATH=/opt/ImageMagick/bin:$PATH; identify -format %m '/var/folders/qb/nxdg06qj14s8dx30ybl3qsp00000gn/T/9e76d05a66ff24c83df162a95f33589420150627-35608-81p69a.png[0]'
+Command :: PATH=/opt/ImageMagick/bin:$PATH; convert '/var/folders/qb/nxdg06qj14s8dx30ybl3qsp00000gn/T/9e76d05a66ff24c83df162a95f33589420150627-35608-81p69a.png[0]' -auto-orient -resize "100x100>" '/var/folders/qb/nxdg06qj14s8dx30ybl3qsp00000gn/T/c04fdcd558e7082c08b04ca1cab6880120150627-35608-1or8naw'
+Command :: PATH=/opt/ImageMagick/bin:$PATH; file -b --mime '/var/folders/qb/nxdg06qj14s8dx30ybl3qsp00000gn/T/9e76d05a66ff24c83df162a95f33589420150627-35608-de06ef.png'
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "listings" SET "image_updated_at" = ?, "image_file_name" = ?, "updated_at" = ? WHERE "listings"."id" = ?[0m  [["image_updated_at", "2015-06-27 06:34:50.040884"], ["image_file_name", "beer_holder.png"], ["updated_at", "2015-06-27 06:34:53.791571"], ["id", 3]]
+  [1m[35m (5902.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/listings/3
+Completed 302 Found in 24712ms (ActiveRecord: 5902.9ms)
+
+
+Started GET "/listings/3" for ::1 at 2015-06-27 14:35:13 +0800
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered listings/show.html.erb within layouts/application (951.8ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1872ms (Views: 1869.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/listings" for ::1 at 2015-06-27 14:35:20 +0800
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.4ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 746ms (Views: 745.0ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/listings/4" for ::1 at 2015-06-27 14:35:42 +0800
+Processing by ListingsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OL0Y6847lj7nOMfy8+1NcsaT8GkgFBDJ5uhYHTUrQzaQ4X/iuk8DcF+QHVGxnSfRpjQR8toQKRDhMkQNiiIdcA==", "id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "listings" WHERE "listings"."id" = ?[0m  [["id", 4]]
+  [1m[35m (7.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/listings
+Completed 302 Found in 3053ms (ActiveRecord: 8.1ms)
+
+
+Started GET "/listings" for ::1 at 2015-06-27 14:35:45 +0800
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.4ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (8.5ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 628ms (Views: 626.7ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/listings/6" for ::1 at 2015-06-27 14:35:48 +0800
+Processing by ListingsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"vLKXBHkqbqw6qbHCJlYfpe9+AX+M9/8xdUAbvMH2V+4U7vANDV774oIBa2FkJnUGj9ng5Hbzxuhymgesfv8JqA==", "id"=>"6"}
+  [1m[35mListing Load (0.1ms)[0m  SELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "listings" WHERE "listings"."id" = ?  [["id", 6]]
+  [1m[36m (29.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/listings
+Completed 302 Found in 3212ms (ActiveRecord: 30.4ms)
+
+
+Started GET "/listings" for ::1 at 2015-06-27 14:35:51 +0800
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.4ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 430ms (Views: 428.6ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/listings/5" for ::1 at 2015-06-27 14:35:55 +0800
+Processing by ListingsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"11BcqhJN8Kw/f8mINSgMKdfuzlUl2Tup6Tz4Wsd3pcN/DDujZjll4ofXEyt3WGaKt0kvzt/dAnDu5uRKeH77hQ==", "id"=>"5"}
+  [1m[36mListing Load (0.1ms)[0m  [1mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "listings" WHERE "listings"."id" = ?[0m  [["id", 5]]
+  [1m[35m (6.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/listings
+Completed 302 Found in 2880ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/listings" for ::1 at 2015-06-27 14:35:58 +0800
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 63ms (Views: 62.4ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/listings/7" for ::1 at 2015-06-27 14:36:00 +0800
+Processing by ListingsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wx3rIwDKMxP+Us77pm2RPd1ZPYmFgI8sInF0dHXxdFlrQYwqdL6mXUb6FFjkHfuevf7cEn+EtvUlq2hkyvgqHw==", "id"=>"7"}
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "listings" WHERE "listings"."id" = ?  [["id", 7]]
+  [1m[36m (30.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/listings
+Completed 302 Found in 2563ms (ActiveRecord: 31.3ms)
+
+
+Started GET "/listings" for ::1 at 2015-06-27 14:36:02 +0800
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.2ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 84ms (Views: 83.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/listings" for ::1 at 2015-06-27 14:36:17 +0800
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (3023.7ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3096ms (Views: 3095.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.self-139611ac333039e62462d89208b238f2d2b7598fb15ea5da283e40297ae4e2bd.css?body=1" for ::1 at 2015-06-27 14:36:20 +0800
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-27 14:36:20 +0800
+
+
+Started GET "/assets/listings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-27 14:36:20 +0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-27 14:36:20 +0800
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-06-27 14:36:20 +0800
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-27 14:36:20 +0800
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for ::1 at 2015-06-27 14:36:20 +0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-27 14:36:20 +0800
+
+
+Started GET "/assets/listings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-27 14:36:20 +0800
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-27 14:36:20 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-06-27 14:36:20 +0800
